@@ -18,6 +18,7 @@ CREATE TABLE jobs (
 );
 
 CREATE TABLE userOption (
+    username VARCHAR(255),
     jobsOpen INT(255),
     jobsDone INT(255),
     languages VARCHAR(255)

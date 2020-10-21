@@ -1,6 +1,6 @@
 const bcrypt = require("bcryptjs");
 const { JSONB } = require("sequelize");
-// Creating our Languages model
+// Creating our Jobs model
 module.exports = function (sequelize, DataTypes) {
     const Jobs = sequelize.define('jobs', {
         jobName: {
