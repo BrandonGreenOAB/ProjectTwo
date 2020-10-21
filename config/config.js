@@ -1,24 +1,22 @@
 require("dotenv").config(); // this is important!
 module.exports = {
   development: {
-    username: process.env.DB_USERNAME,
-    password: process.env.DB_PASSWORD,
+    username: process.env.DB_USER,
+    password: process.env.DB_PASS,
     database: "dock_db",
     host: process.env.DB_HOST,
-    dialect: "mysql",
+    dialect: "mysql"
   },
   test: {
     username: "root",
-    password: null,
+    password: "null",
     database: "database_test",
     host: "127.0.0.1",
-    dialect: "mysql",
+    dialect: "mysql"
   },
   production: {
-    username: "root",
-    password: null,
-    database: "database_production",
-    host: "127.0.0.1",
-    dialect: "mysql",
-  },
+    // eslint-disable-next-line camelcase
+    use_env_variable: "JAWSDB_URL",
+    dialect: "mysql"
+  }
 };
