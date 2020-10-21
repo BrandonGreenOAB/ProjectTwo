@@ -1,5 +1,5 @@
 const bcrypt = require("bcryptjs");
-// Creating our Languages model
+// Creating our userProfile model
 module.exports = function (sequelize, DataTypes) {
     const UserProfile = sequelize.define('userprofile', {
         languages: {
@@ -10,11 +10,11 @@ module.exports = function (sequelize, DataTypes) {
             type: DataTypes.Array(DataTypes.STRING),
             allowNull: false
           },
-          createdjobs: {
+          jobsOpens: {
             type: DataTypes.Array(DataTypes.STRING),
             allowNull: false
           },
-          completedjobs: {
+          jobsDone: {
             type: DataTypes.Array(DataTypes.STRING),
             allowNull: false
           },
