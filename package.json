@@ -1,7 +1,7 @@
 {
   "name": "projecttwo",
   "version": "1.0.0",
-  "description": "",
+  "description": "Placeholder description",
   "main": "server.js",
   "scripts": {
     "test": "npm run lint",
@@ -33,5 +33,13 @@
     "eslint-plugin-prettier": "^2.6.2",
     "mocha": "^8.2.0",
     "prettier": "^1.13.7"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BrandonGreenOAB/ProjectTwo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/BrandonGreenOAB/ProjectTwo/issues"
+  },
+  "homepage": "https://github.com/BrandonGreenOAB/ProjectTwo#readme"
 }
