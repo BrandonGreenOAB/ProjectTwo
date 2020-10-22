@@ -1,41 +1,45 @@
 const bcrypt = require("bcryptjs");
-// Creating our Languages model
+
+// Creating our userProfile model
+
 module.exports = function(sequelize, DataTypes) {
   const UserProfile = sequelize.define(
     "userprofile",
     {
       languages: {
-        type: DataTypes.ARRAY(DataTypes.STRING),
-        allowNull: false
+
+        type: DataTypes.STRING,
+        allowNull: false,
       },
       username: {
-        type: DataTypes.ARRAY(DataTypes.STRING),
-        allowNull: false
+        type: DataTypes.STRING,
+        allowNull: false,
       },
-      createdjobs: {
-        type: DataTypes.ARRAY(DataTypes.STRING),
-        allowNull: false
+      jobsOpen: {
+        type: DataTypes.STRING,
+        allowNull: false,
       },
-      completedjobs: {
-        type: DataTypes.ARRAY(DataTypes.STRING),
-        allowNull: false
-      }
+      jobsDone: {
+        type: DataTypes.STRING,
+        allowNull: false,
+      },
     },
 
     {
-      freezeTableName: true
+      freezeTableName: true,
     }
   );
 
-  UserProfile.associate = function(models) {
-    // We're saying that a Post should belong to an Author
-    // A Post can't be created without an Author due to the foreign key constraint
-    Post.belongsTo(models.User, {
-      foreignKey: {
-        allowNull: false
-      }
-    });
-  };
+  // UserProfile.associate = function(models) {
+  //   // We're saying that a User Profile should belong to an USER
+  //   // A User profile can't be created without an User due to the foreign key constraint
+  //   UserProfile.belongsTo(models.User, {
+  //     foreignKey: {
+  //       allowNull: false,
+  //     },
+  //   });
+  // };
+
 
   return UserProfile;
 };
