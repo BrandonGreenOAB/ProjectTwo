@@ -12,11 +12,13 @@ CREATE TABLE jobs (
     jobid int not null AUTO_INCREMENT,
     jobName VARCHAR(255),
     price decimal(15,2),
+    languages VARCHAR(255)
     jobDone BOOLEAN NOT NULL default 0
     PRIMARY key (jobid)
 );
 
 CREATE TABLE userOption (
+    username VARCHAR(255),
     jobsOpen INT(255),
     jobsDone INT(255),
     languages VARCHAR(255)
