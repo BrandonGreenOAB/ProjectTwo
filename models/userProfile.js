@@ -1,10 +1,13 @@
 const bcrypt = require("bcryptjs");
+
 // Creating our userProfile model
+
 module.exports = function(sequelize, DataTypes) {
   const UserProfile = sequelize.define(
     "userprofile",
     {
       languages: {
+
         type: DataTypes.STRING,
         allowNull: false,
       },
@@ -36,6 +39,7 @@ module.exports = function(sequelize, DataTypes) {
   //     },
   //   });
   // };
+
 
   return UserProfile;
 };
