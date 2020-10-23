@@ -59,9 +59,9 @@ module.exports = function(app) {
           language: "Javascript",
         },
       })
-      .then(function(results) {
-        console.log(results);
-        res.json(results);
+      .then(function(jobs) {
+        console.log(jobs);
+        res.json(jobs);
       });
   });
 };
