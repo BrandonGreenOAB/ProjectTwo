@@ -30,7 +30,6 @@ $(document).ready(() => {
         pTag.text(price);
         $("#results").append(div);
       }
-
     });
   });
 });
