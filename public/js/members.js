@@ -4,11 +4,35 @@ $(document).ready(() => {
   $.get("/api/user_data").then((data) => {
     $(".member-name").text(data.email);
   });
+  console.log("hooked up");
+  $(".languageBtn").on("click", function(event) {
+    event.preventDefault();
+    console.log("button clicked");
+    // get the actual language from the data type
+    const lang = $(this).data("language");
+    console.log(lang);
+    //hit the server with the language specified
+    $.get("/api/members/" + lang).then((data) => {
+      console.log(data);
+      //build dynamic card with all the data and append each card to the correct div
+      for (let i = 0; i < data.length; i++) {
+        var div = $("<div class='card'>");
+        var divC = $("<div class='card-content'>");
+        var span = $("<span class='card-title'>");
+        var pTag = $("<p>");
+        var jobName = data[i].jobName;
+        var price = data[i].price;
+        var language = data[i].language;
+        div.append(divC);
+        divC.append(span);
+        span.text(jobName);
+        divC.append(pTag);
+        pTag.text(price);
+        $("#results").append(div);
+      }
 
-  $.get("/api/members/jobs").then((data) => {
-    
+    });
   });
-
 });
 // $(".create-job").on("click", function(event) {
 //   event.preventDefault();
@@ -48,6 +72,6 @@ $(document).ready(() => {
 //   $("#jobDone").val()
 // });
 
-// on click function for the css button 
+// on click function for the css button
 // get request from jobs database
 // use the id of languages

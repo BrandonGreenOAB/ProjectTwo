@@ -1,7 +1,6 @@
 // Requiring our models and passport as we've configured it
 const db = require("../models");
 const passport = require("../config/passport");
-const jobs = require("../models/jobs");
 
 module.exports = function(app) {
   // Using the passport.authenticate middleware with our local strategy.
@@ -52,16 +51,16 @@ module.exports = function(app) {
     }
   });
 
-  app.get("api/members/jobs", (req, res) => {
-    jobs
-      .findAll({
-        where: {
-          language: "Javascript",
-        },
-      })
-      .then(function(jobs) {
-        console.log(jobs);
-        res.json(jobs);
-      });
+  app.get("/api/members/:language", (req, res) => {
+    const language = req.params.language;
+    console.log(language);
+    db.Jobs.findAll({
+      where: {
+        language: "Javascript",
+      },
+    }).then(function(jobs) {
+      console.log(jobs);
+      res.json(jobs);
+    });
   });
 };
