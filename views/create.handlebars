@@ -15,14 +15,15 @@
     </div>
 
     <div id="newJob">
-        <form action="/action_page.php">
+        <form action="/create/jobs" method="POST">
             <label for="jobName">Job Name: </label><br>
             <input type="text" id="jobName" name="jobName" value="Enter Job"><br>
             <label for="price">Price: </label><br>
             <input type="text" id="price" name="price" value="Enter Price"><br><br>
-            <label for="language">Job Name: </label><br>
+            <label for="language">: </label><br>
             <input type="text" id="language" name="language" value="Enter Language"><br>
-            <input type="submit" class="jobSubmit" value="Submit">
+            <button type="submit" class="jobSubmit">Submit</button>
+
         </form>
 
     </div>
