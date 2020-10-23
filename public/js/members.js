@@ -5,10 +5,16 @@ $(document).ready(() => {
     $(".member-name").text(data.email);
   });
 
-  $.get("/api/members/jobs").then((data) => {
-    
+  $(".languageBtn").on("click", function(event) {
+    event.preventDefault();
+    // get the actual language from the data type
+    const lang = $(this).data("language");
+    console.log(lang);
+    //hit the server with the language specified
+    $.get("/api/members/" + lang).then((data) => {
+      console.log(data);
+    });
   });
-
 });
 // $(".create-job").on("click", function(event) {
 //   event.preventDefault();
@@ -48,6 +54,6 @@ $(document).ready(() => {
 //   $("#jobDone").val()
 // });
 
-// on click function for the css button 
+// on click function for the css button
 // get request from jobs database
 // use the id of languages
