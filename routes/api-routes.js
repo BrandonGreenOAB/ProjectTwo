@@ -56,11 +56,11 @@ module.exports = function(app) {
     console.log(language);
     db.Jobs.findAll({
       where: {
-        language: "Javascript",
-      },
+        language: "Javascript"
+      }
     }).then(function(jobs) {
       console.log(jobs);
       res.json(jobs);
-    });
+    })
   });
 };
