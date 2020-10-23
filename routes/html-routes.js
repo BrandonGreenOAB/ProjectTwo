@@ -12,6 +12,7 @@ module.exports = function(app) {
     }
     res.render("signup", {});
   });
+  app.get("/", )
 
   app.get("/login", (req, res) => {
     // If the user already has an account send them to the members page

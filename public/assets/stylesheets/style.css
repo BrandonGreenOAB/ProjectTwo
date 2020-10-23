@@ -1,12 +1,11 @@
 form.login {
   margin-top: 50px;
-};
+  background-color: black;
+}
 
 form.signup {
   margin-top: 50px;
-
 }
-
 
 /* from coolors
 A5A58D
@@ -22,4 +21,3 @@ DDBEA9 */
 /* from actual pic 
 #e1d6c6
 #d08973 */
-`
