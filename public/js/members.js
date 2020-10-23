@@ -4,6 +4,10 @@ $(document).ready(() => {
   $.get("/api/user_data").then(data => {
     $(".member-name").text(data.email);
   });
+
+  $.get("/api/members/jobs").then(data => {
+    
+  })
 });
 // $(".create-job").on("click", function(event) {
 //   event.preventDefault();
