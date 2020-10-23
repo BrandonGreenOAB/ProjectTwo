@@ -1,12 +1,30 @@
 form.login {
   margin-top: 50px;
-  background-color: black;
-}
+};
 
 form.signup {
   margin-top: 50px;
 
 };
+
+#welcome{
+  background-image: url("../images/ab724025-6e54-4847-85f0-056f436507da_200x200.png");
+}
+#logo {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+
+}
+
+#subtext {
+  font-size: 18pt;
+  text-align: center;
+}
+
+
 
 /* from coolors
 A5A58D
