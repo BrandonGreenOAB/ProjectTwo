@@ -52,7 +52,8 @@ module.exports = function(app) {
     }
   });
 
-  app.get("api/members/jobs", (req, res) => {
+  app.get("api/members/:language", (req, res) => {
+    const language = req.params.language
     jobs
       .findAll({
         where: {
