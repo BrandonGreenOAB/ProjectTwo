@@ -1,7 +1,11 @@
 form.login {
   margin-top: 50px;
-}
+};
 
 form.signup {
   margin-top: 50px;
+};
+
+main{
+  background-image: url("../images/bakc-proj.jpeg");
 }
