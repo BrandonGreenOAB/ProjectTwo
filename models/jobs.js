@@ -20,6 +20,7 @@ module.exports = function(sequelize, DataTypes) {
       jobDone: {
         type: DataTypes.BOOLEAN,
         allowNull: false,
+        default: false
       },
     },
 
