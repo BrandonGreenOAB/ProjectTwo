@@ -15,13 +15,13 @@
     </div>
 
     <div id="newJob">
-        <form action="/create/jobs" method="POST">
+        <form id="input" action="/create/jobs" method="POST">
             <label for="jobName">Job Name: </label><br>
-            <input type="text" id="jobName" name="jobName" value="Enter Job"><br>
+            <input type="text" class="input" id="jobName" name="jobName" placeholder="Enter Job"><br>
             <label for="price">Price: </label><br>
-            <input type="text" id="price" name="price" value="Enter Price"><br><br>
+            <input type="text" class="input" id="price" name="price" placeholder="Enter Price"><br><br>
             <label for="language">: </label><br>
-            <input type="text" id="language" name="language" value="Enter Language"><br>
+            <input type="text" class="input" id="language" name="language" placeholder="Enter Language"><br>
             <button type="submit" class="jobSubmit">Submit</button>
 
         </form>

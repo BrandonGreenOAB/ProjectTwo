@@ -15,6 +15,7 @@ $(document).ready(() => {
     $.get("/api/members/" + lang).then((data) => {
       console.log(data);
       $("#results").empty();
+
       //build dynamic card with all the data and append each card to the correct div
       for (let i = 0; i < data.length; i++) {
         var div = $("<div class='card'>");
