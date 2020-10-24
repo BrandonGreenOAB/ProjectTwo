@@ -2,33 +2,24 @@ form.login {
   margin-top: 50px;
 };
 
+
 form.signup {
   margin-top: 50px;
 
 };
-
-<<<<<<< HEAD:public/assets/stylesheets/style.css
-
-#welcome{
-  background-image: url("../images/ab724025-6e54-4847-85f0-056f436507da_200x200.png");
-}
 #logo {
-  text-align: center;
-}
-
-h3 {
-  text-align: center;
-
-}
-
-#subtext {
-  font-size: 18pt;
-  text-align: center;
-}
-
-
-=======
->>>>>>> 04e634058941e16b268ccf5f9fa505237e020995:public/assets/stylesheets/signup.css
+	text-align: center;
+  }
+  
+  h3 {
+	text-align: center;
+  
+  }
+  
+  #subtext {
+	font-size: 18pt;
+	text-align: center;
+  }
 /* from coolors
 A5A58D
 
