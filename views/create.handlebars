@@ -1,30 +1,34 @@
 {{body}}
-<main>
-    <nav>
-        <div class="nav-wrapper">
-            <a href="#" class="brand-logo"></a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a href="/members">Main</a></li>
-                <li><a href="/aboutus">About us</a></li>
-                <li><a href="/contactus">Contact us</a></li>
-                <li><a href="/logout">log out</a></li>
-            </ul>
-        </div>
-    </nav>
 
+<nav>
+    <div class="nav-wrapper">
+        <a href="#" class="brand-logo"><img src="/assets/images/ab724025-6e54-4847-85f0-056f436507da_200x200.png"
+                height="64px"></a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="/members">Main</a></li>
+            <li><a href="/aboutus">About us</a></li>
+            <li><a href="/contactus">Contact us</a></li>
+            <li><a href="/logout">log out</a></li>
+        </ul>
     </div>
+</nav>
 
+</div>
+<main>
     <div id="newJob">
-        <form id="input" action="/create/jobs" method="POST">
-            <label for="jobName">Job Name: </label><br>
-            <input type="text" class="input" id="jobName" name="jobName" placeholder="Enter Job"><br>
-            <label for="price">Price: </label><br>
-            <input type="text" class="input" id="price" name="price" placeholder="Enter Price"><br><br>
-            <label for="language">: </label><br>
-            <input type="text" class="input" id="language" name="language" placeholder="Enter Language"><br>
-            <button type="submit" class="jobSubmit">Submit</button>
+        <h1 class="h1-responsive font-weight-bold text-center mb-5" style="color:black; align-text: center">Create a new
+            Job <a href="#" class="brand-logo"><img
+                    src="/assets/images/ab724025-6e54-4847-85f0-056f436507da_200x200.png" height="100px"></a></h2>
+            <form id="input" action="/create/jobs" method="POST">
+                <label for="jobName" style="font-size: large; color:black">Job Name: </label><br>
+                <input type="text" class="input" id="jobName" name="jobName" placeholder="Enter Job"><br>
+                <label for="price" style="font-size: large; color:black">Price: </label><br>
+                <input type="text" class="input" id="price" name="price" placeholder="Enter Price"><br><br>
+                <label for="language" style="font-size: large; color:black">Language: </label><br>
+                <input type="text" class="input" id="language" name="language" placeholder="Enter Language"><br>
+                <button type="submit" class="jobSubmit btn-md waves-effect waves-light">Submit</button>
 
-        </form>
+            </form>
 
     </div>
 </main>
