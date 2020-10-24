@@ -13,7 +13,7 @@ router.get("/", function(req, res) {
   }
 
   res.render("signup", {
-    style: "signup.css",
+    style: "style.css",
   });
 });
 
@@ -22,7 +22,9 @@ router.get("/login", (req, res) => {
   if (req.user) {
     res.redirect("/login");
   }
-  res.render("login");
+  res.render("login", {
+    style: "login.css",
+  });
 });
 
 router.get("/logout", (req, res) => {
