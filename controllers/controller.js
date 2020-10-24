@@ -67,6 +67,12 @@ router.get("/create", (req, res) => {
   });
 });
 
+router.get("/contactus", (req, res) => {
+  res.render("contactus", {
+    style: "contactus.css",
+  });
+});
+
 router.get("/api/members/:language", (req, res) => {
   const language = req.params.language;
   console.log(language);
