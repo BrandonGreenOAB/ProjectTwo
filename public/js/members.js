@@ -24,6 +24,8 @@ $(document).ready(() => {
         var pTag = $("<p>");
         var pTagTwo = $("<p>");
         var contact = $("<button class='contact'> contact </button>");
+        var br = $("<br>");
+        var del = $("<button class='del'> Finish Job </button>");
         var jobName = "Job: " + data[i].jobName;
         var price = "Price: $" + data[i].price;
         var language = "language: " + data[i].language;
@@ -33,6 +35,8 @@ $(document).ready(() => {
         divC.append(pTag);
         divC.append(pTagTwo);
         divC.append(contact);
+        divC.append(br);
+        divC.append(del);
         pTag.text(price);
         pTagTwo.text(language);
         $("#results").append(div);
