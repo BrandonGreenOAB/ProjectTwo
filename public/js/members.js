@@ -1,3 +1,5 @@
+// const { DELETE } = require("sequelize/types/lib/query-types");
+
 $(document).ready(() => {
   // This file just does a GET request to figure out which user is logged in
   // and updates the HTML on the page
@@ -39,7 +41,6 @@ $(document).ready(() => {
         span.text(jobName);
         divC.append(pTag);
         divC.append(pTagTwo);
-        divC.append(pTagThree);
         divC.append(contact);
         divC.append(br);
         divC.append(del);
@@ -51,7 +52,17 @@ $(document).ready(() => {
       $(".del").on("click", function(event) {
         event.preventDefault();
         console.log("button clicked");
-        console.log(this.id);
+        var jobid = this.id;
+        console.log(jobid);
+
+        //DELETE restful method on the specific job id
+        $.ajax({
+          url: "/delete/jobs/" + jobid,
+          method: "DELETE",
+        }).then(function(req, res, err) {
+          if (err) throw err;
+          window.location.reload();
+        });
       });
     });
   });
