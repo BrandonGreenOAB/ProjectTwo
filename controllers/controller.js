@@ -22,10 +22,8 @@ router.get("/login", (req, res) => {
   if (req.user) {
     res.redirect("/login");
   }
-
-  res.render("login", {
-    style: "login.css",
-
+  res.render("login",{
+    style:"login.css"
   });
 });
 
@@ -126,5 +124,16 @@ router.post("/create/jobs", (req, res) => {
       res.status(401).json(err);
     });
 });
+
+router.delete("/delete/jobs/:id", (req, res) => {
+  const jobInfo = req.body;
+  const id = req.body.id
+  console.log(jobInfo)
+  db.Jobs.destroy({
+    where: {
+      id: id
+    }
+  })
+})
 
 module.exports = router;
