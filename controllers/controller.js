@@ -22,8 +22,10 @@ router.get("/login", (req, res) => {
   if (req.user) {
     res.redirect("/login");
   }
+
   res.render("login", {
     style: "login.css",
+
   });
 });
 
