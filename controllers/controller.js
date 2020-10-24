@@ -42,6 +42,12 @@ router.get("/members", isAuthenticated, (req, res) => {
   });
 });
 
+router.get("/aboutus", (req, res) => {
+  res.render("aboutus", {
+    style: "aboutus.css",
+  });
+});
+
 // Route for getting some data about our user to be used client side
 router.get("/api/user_data", (req, res) => {
   if (!req.user) {

@@ -1,0 +1,21 @@
+body {
+  background-image: url(../images/sun-pattern.png);
+}
+
+#container {
+  display: flex;
+  flex-wrap: wrap;
+}
+h1 {
+  text-align: center;
+}
+.row {
+  width: 100%;
+}
+.card {
+  width: 75%;
+}
+.s6 {
+  display: flex;
+  justify-content: center;
+}
