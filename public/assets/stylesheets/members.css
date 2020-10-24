@@ -1,0 +1,32 @@
+#results {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-around;
+  margin-top: 35px;
+}
+h3 {
+  margin-top: 0px;
+  text-align: center;
+}
+#pageLogo {
+  margin-left: 43%;
+  padding-bottom: 0px;
+}
+.contact {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.card {
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+.card:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition: opacity 0.3s ease-in-out;
+}
+
+body {
+  background-image: url(../images/interlaced.png);
+}
