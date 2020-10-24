@@ -4,7 +4,9 @@ $(document).ready(() => {
   $.get("/api/user_data").then((data) => {
     $(".member-name").text(data.email);
   });
+  //ensure connection as a User
   console.log("hooked up");
+  //When you click a button this function will read the language and append
   $(".languageBtn").on("click", function(event) {
     event.preventDefault();
     console.log("button clicked");
@@ -23,11 +25,12 @@ $(document).ready(() => {
         var span = $("<span class='card-title'>");
         var pTag = $("<p>");
         var pTagTwo = $("<p>");
-        var pTagThree = $("<p>");
         var contact = $("<button class='contact'> contact </button>");
         var br = $("<br>");
-        var del = $("<button class='del'> Finish Job </button>");
-        var jobid = data[i].id;
+        var del = $("<button class='del '> Finish Job </button>").attr(
+          "id",
+          data[i].id
+        );
         var jobName = "Job: " + data[i].jobName;
         var price = "Price: $" + data[i].price;
         var language = "language: " + data[i].language;
@@ -42,13 +45,13 @@ $(document).ready(() => {
         divC.append(del);
         pTag.text(price);
         pTagTwo.text(language);
-        pTagThree.text(jobid);
         $("#results").append(div);
       }
+      // Destroy function that deletes the specific job from the Jobs table
       $(".del").on("click", function(event) {
         event.preventDefault();
         console.log("button clicked");
-        console.log($(this));
+        console.log(this.id);
       });
     });
   });
