@@ -31,7 +31,9 @@ router.get("/logout", (req, res) => {
 router.get("/members", isAuthenticated, (req, res) => {
   // console.log("auth", req.user);
   req.user
-  res.render("members");
+  res.render("members", {
+    style: "members.css"
+  });
 });
 
   // Route for getting some data about our user to be used client side
