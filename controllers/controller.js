@@ -12,7 +12,7 @@ router.get("/", function(req, res) {
     res.redirect("/members");
   }
 
-  res.render("signup");
+  res.render("signup", {});
 });
 
 router.get("/login", (req, res) => {
@@ -58,7 +58,7 @@ router.get("/api/members/:language", (req, res) => {
   console.log(language);
   db.Jobs.findAll({
     where: {
-      language: "Javascript",
+      language: language,
     },
   }).then(function(jobs) {
     console.log(jobs);
