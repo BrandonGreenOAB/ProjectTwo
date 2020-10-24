@@ -1,4 +1,4 @@
-body {
+main {
   text-align: center;
 }
 #input {
@@ -7,3 +7,9 @@ body {
   text-align: left;
   margin-top: 4%;
 }
+button{
+  background-color: rgb(20, 126, 247);
+  color: white;
+  font-size: large;
+  font: bold;
+};
