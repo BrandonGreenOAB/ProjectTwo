@@ -1,0 +1,76 @@
+#results {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-around;
+  margin-top: 35px;
+}
+h3 {
+  margin-top: 0px;
+  text-align: center;
+  color: black;
+}
+#pageLogo {
+  margin-top: 5%;
+  margin-left: 43%;
+  padding-bottom: 0px;
+}
+.contact {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.card {
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+.card:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition: opacity 0.3s ease-in-out;
+}
+
+body {
+  background-image: url(../images/sun-pattern.png);
+  color: black;
+}
+
+.stage {
+  margin-top: 5%;
+  height: 100px;
+  display: flex;
+}
+
+#pageLogo {
+  align-self: flex-end;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  transform-origin: top;
+}
+.bounce-7 {
+  animation-name: bounce-7;
+  animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
+}
+
+@keyframes bounce-7 {
+  0% {
+    transform: scale(1, 1) translateY(0);
+  }
+  10% {
+    transform: scale(1.1, 0.9) translateY(0);
+  }
+  30% {
+    transform: scale(0.9, 1.1) translateY(-30px);
+  }
+  50% {
+    transform: scale(1.05, 0.95) translateY(0);
+  }
+  57% {
+    transform: scale(1, 1) translateY(-7px);
+  }
+  64% {
+    transform: scale(1, 1) translateY(0);
+  }
+  100% {
+    transform: scale(1, 1) translateY(0);
+  }
+}

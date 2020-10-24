@@ -12,7 +12,9 @@ router.get("/", function(req, res) {
     res.redirect("/members");
   }
 
-  res.render("signup");
+  res.render("signup", {
+    style: "style.css",
+  });
 });
 
 router.get("/login", (req, res) => {
@@ -20,37 +22,55 @@ router.get("/login", (req, res) => {
   if (req.user) {
     res.redirect("/login");
   }
-  res.render("login");
+  res.render("login",{
+    style:"login.css"
+  });
 });
 
 router.get("/logout", (req, res) => {
-    req.logout();
-    res.redirect("/");
-  });
+  req.logout();
+  res.redirect("/");
+});
 
 router.get("/members", isAuthenticated, (req, res) => {
   // console.log("auth", req.user);
-  req.user
-  res.render("members");
+  req.user;
+  res.render("members", {
+    style: "members.css",
+  });
 });
 
-  // Route for getting some data about our user to be used client side
-  router.get("/api/user_data", (req, res) => {
-    if (!req.user) {
-      // The user is not logged in, send back an empty object
-      res.json({});
-    } else {
-      // Otherwise send back the user's email and id
-      // Sending back a password, even a hashed password, isn't a good idea
-      res.json({
-        email: req.user.email,
-        id: req.user.id,
-      });
-    }
+router.get("/aboutus", (req, res) => {
+  res.render("aboutus", {
+    style: "aboutus.css",
   });
+});
+
+// Route for getting some data about our user to be used client side
+router.get("/api/user_data", (req, res) => {
+  if (!req.user) {
+    // The user is not logged in, send back an empty object
+    res.json({});
+  } else {
+    // Otherwise send back the user's email and id
+    // Sending back a password, even a hashed password, isn't a good idea
+    res.json({
+      email: req.user.email,
+      id: req.user.id,
+    });
+  }
+});
 
 router.get("/create", (req, res) => {
-  res.render("create", {});
+  res.render("create", {
+    style: "create.css",
+  });
+});
+
+router.get("/contactus", (req, res) => {
+  res.render("contactus", {
+    style: "contactus.css",
+  });
 });
 
 router.get("/api/members/:language", (req, res) => {
@@ -58,7 +78,7 @@ router.get("/api/members/:language", (req, res) => {
   console.log(language);
   db.Jobs.findAll({
     where: {
-      language: "Javascript",
+      language: language,
     },
   }).then(function(jobs) {
     console.log(jobs);
@@ -68,17 +88,17 @@ router.get("/api/members/:language", (req, res) => {
 
 //POST
 router.post("/api/signup", (req, res) => {
-    db.User.create({
-      email: req.body.email,
-      password: req.body.password,
+  db.User.create({
+    email: req.body.email,
+    password: req.body.password,
+  })
+    .then(() => {
+      res.redirect(307, "/api/login");
     })
-      .then(() => {
-        res.redirect(307, "/api/login");
-      })
-      .catch((err) => {
-        res.status(401).json(err);
-      });
-  });
+    .catch((err) => {
+      res.status(401).json(err);
+    });
+});
 
 router.post("/api/login", passport.authenticate("local"), (req, res) => {
   // Sending back a password, even a hashed password, isn't a good idea
@@ -104,5 +124,17 @@ router.post("/create/jobs", (req, res) => {
       res.status(401).json(err);
     });
 });
+//DELETE
+router.delete("/delete/jobs/:id", (req, res) => {
+  const jobInfo = req.body;
+  const id = req.params.id;
+  console.log(id);
+  console.log(jobInfo)
+  db.Jobs.destroy({
+    where: {
+      id: id
+    }
+  })
+})
 
 module.exports = router;

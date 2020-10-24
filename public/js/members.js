@@ -1,10 +1,14 @@
+// const { DELETE } = require("sequelize/types/lib/query-types");
+
 $(document).ready(() => {
   // This file just does a GET request to figure out which user is logged in
   // and updates the HTML on the page
   $.get("/api/user_data").then((data) => {
     $(".member-name").text(data.email);
   });
+  //ensure connection as a User
   console.log("hooked up");
+  //When you click a button this function will read the language and append
   $(".languageBtn").on("click", function(event) {
     event.preventDefault();
     console.log("button clicked");
@@ -14,63 +18,52 @@ $(document).ready(() => {
     //hit the server with the language specified
     $.get("/api/members/" + lang).then((data) => {
       console.log(data);
+      $("#results").empty();
+
       //build dynamic card with all the data and append each card to the correct div
       for (let i = 0; i < data.length; i++) {
         var div = $("<div class='card'>");
         var divC = $("<div class='card-content'>");
         var span = $("<span class='card-title'>");
         var pTag = $("<p>");
-        var jobName = data[i].jobName;
-        var price = data[i].price;
-        var language = data[i].language;
+        var pTagTwo = $("<p>");
+        var contact = $("<button class='contact'> contact </button>");
+        var br = $("<br>");
+        var del = $("<button class='del '> Finish Job </button>").attr(
+          "id",
+          data[i].id
+        );
+        var jobName = "Job: " + data[i].jobName;
+        var price = "Price: $" + data[i].price;
+        var language = "language: " + data[i].language;
         div.append(divC);
         divC.append(span);
         span.text(jobName);
         divC.append(pTag);
+        divC.append(pTagTwo);
+        divC.append(contact);
+        divC.append(br);
+        divC.append(del);
         pTag.text(price);
+        pTagTwo.text(language);
         $("#results").append(div);
       }
+      // Destroy function that deletes the specific job from the Jobs table
+      $(".del").on("click", function(event) {
+        event.preventDefault();
+        console.log("button clicked");
+        var jobid = this.id;
+        console.log(jobid);
+
+        //DELETE restful method on the specific job id
+        $.ajax({
+          url: "/delete/jobs/" + jobid,
+          method: "DELETE",
+        }).then(function(req, res, err) {
+          if (err) throw err;
+          window.location.reload();
+        });
+      });
     });
   });
 });
-// $(".create-job").on("click", function(event) {
-//   event.preventDefault();
-
-//   // Make a job object
-//   var Newjob = {
-//     jobName: $("#jobName").val().trim(),
-//     price: $("#price").val().trim(),
-//     languages: $("#languages").val().trim(),
-//     jobDone: $("#jobDone").val(),
-
-//   };
-
-//   console.log(Newjob);
-
-//   // Send an AJAX POST-request with jQuery
-//   $.post("/api/new", Newjob)
-//     // On success, run the following code
-//     .then(function() {
-
-//       var row = $("<div>");
-//       row.addClass("job");
-
-//       row.append("<p>" + Newjob.jobName + " job: </p>");
-//       row.append("<p>" + Newjob.price + "</p>");
-//       row.append("<p>" + Newjob.languages + "</p>");
-//       row.append("<p>" + Newjob.jobDone + "</p>");
-
-//       $("#job-area").prepend(row);
-
-//     });
-
-//   // Empty each input box by replacing the value with an empty string
-//   $("#jobName").val("");
-//   $("#price").val("");
-//   $("#languages").val();
-//   $("#jobDone").val()
-// });
-
-// on click function for the css button
-// get request from jobs database
-// use the id of languages

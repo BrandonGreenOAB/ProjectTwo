@@ -1,0 +1,15 @@
+main {
+  text-align: center;
+}
+#input {
+  width: 65%;
+  display: inline-block;
+  text-align: left;
+  margin-top: 4%;
+}
+button{
+  background-color: rgb(20, 126, 247);
+  color: white;
+  font-size: large;
+  font: bold;
+};
