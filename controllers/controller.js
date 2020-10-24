@@ -126,10 +126,11 @@ router.post("/create/jobs", (req, res) => {
       res.status(401).json(err);
     });
 });
-
+//DELETE
 router.delete("/delete/jobs/:id", (req, res) => {
   const jobInfo = req.body;
-  const id = req.body.id
+  const id = req.params.id;
+  console.log(id);
   console.log(jobInfo)
   db.Jobs.destroy({
     where: {
