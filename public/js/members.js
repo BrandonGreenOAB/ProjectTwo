@@ -14,20 +14,26 @@ $(document).ready(() => {
     //hit the server with the language specified
     $.get("/api/members/" + lang).then((data) => {
       console.log(data);
+      $("#results").empty();
       //build dynamic card with all the data and append each card to the correct div
       for (let i = 0; i < data.length; i++) {
         var div = $("<div class='card'>");
         var divC = $("<div class='card-content'>");
         var span = $("<span class='card-title'>");
         var pTag = $("<p>");
-        var jobName = data[i].jobName;
-        var price = data[i].price;
-        var language = data[i].language;
+        var pTagTwo = $("<p>");
+        var contact = $("<button class='contact'> contact </button>");
+        var jobName = "Job: " + data[i].jobName;
+        var price = "Price: $" + data[i].price;
+        var language = "language: " + data[i].language;
         div.append(divC);
         divC.append(span);
         span.text(jobName);
         divC.append(pTag);
+        divC.append(pTagTwo);
+        divC.append(contact);
         pTag.text(price);
+        pTagTwo.text(language);
         $("#results").append(div);
       }
     });

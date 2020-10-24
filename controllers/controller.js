@@ -12,7 +12,7 @@ router.get("/", function(req, res) {
     res.redirect("/members");
   }
 
-  res.render("signup");
+  res.render("signup", {});
 });
 
 router.get("/login", (req, res) => {
@@ -20,7 +20,9 @@ router.get("/login", (req, res) => {
   if (req.user) {
     res.redirect("/login");
   }
-  res.render("login");
+  res.render("login",{
+    style:"login.css"
+  });
 });
 
 router.get("/logout", (req, res) => {
@@ -58,7 +60,7 @@ router.get("/api/members/:language", (req, res) => {
   console.log(language);
   db.Jobs.findAll({
     where: {
-      language: "Javascript",
+      language: language,
     },
   }).then(function(jobs) {
     console.log(jobs);
