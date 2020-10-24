@@ -1,7 +1,54 @@
-
-.dog{
-  background-color: blue;
+body{
+  height: 100%;
+width: 100%; 
+background-image: url("./man-prog2.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+text-align: center;
+position: fixed;
 }
+
+.king{
+  background-color: rgba(245, 245, 245, 0.7);
+  margin-top: 125px;
+  padding: 30px;
+  padding-bottom: 80px;
+}
+
+.queen{
+  background-color:  #d08973;
+}
+
+.jack{
+  color: #d08973;
+}
+
+.queen:hover{
+  background-color: #d08973;
+}
+
+.joker{
+
+  background-repeat: no-repeat;
+ margin-bottom: -20px;
+ margin-top: -40px;
+}
+
+.spade{
+  margin-top: -10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* from coolors
 A5A58D
