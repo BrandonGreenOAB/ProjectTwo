@@ -23,9 +23,11 @@ $(document).ready(() => {
         var span = $("<span class='card-title'>");
         var pTag = $("<p>");
         var pTagTwo = $("<p>");
+        var pTagThree = $("<p>");
         var contact = $("<button class='contact'> contact </button>");
         var br = $("<br>");
         var del = $("<button class='del'> Finish Job </button>");
+        var jobid = data[i].id;
         var jobName = "Job: " + data[i].jobName;
         var price = "Price: $" + data[i].price;
         var language = "language: " + data[i].language;
@@ -34,13 +36,20 @@ $(document).ready(() => {
         span.text(jobName);
         divC.append(pTag);
         divC.append(pTagTwo);
+        divC.append(pTagThree);
         divC.append(contact);
         divC.append(br);
         divC.append(del);
         pTag.text(price);
         pTagTwo.text(language);
+        pTagThree.text(jobid);
         $("#results").append(div);
       }
+      $(".del").on("click", function(event) {
+        event.preventDefault();
+        console.log("button clicked");
+        console.log($(this));
+      });
     });
   });
 });
