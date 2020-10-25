@@ -74,3 +74,11 @@ body {
     transform: scale(1, 1) translateY(0);
   }
 }
+
+.languageBtn{
+  margin: 7px;
+}
+
+.languageBtn:hover{
+  
+}
