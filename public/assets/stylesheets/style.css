@@ -1,7 +1,7 @@
 body {
   height: 100%;
   width: 100%;
-  background-image: url("./man-prog2.jpg");
+  background-image: url("../images/man-prog2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
@@ -36,7 +36,6 @@ body {
 .spade {
   margin-top: -10px;
 }
-
 
 /* from coolors
 A5A58D
