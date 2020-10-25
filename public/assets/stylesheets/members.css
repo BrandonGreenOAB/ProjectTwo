@@ -19,7 +19,9 @@ h3 {
   margin-top: 10px;
   margin-bottom: 5px;
 }
-
+nav{
+  background-color: #EDE576;
+}
 .card {
   margin-bottom: 5px;
   margin-top: 5px;
@@ -30,7 +32,7 @@ h3 {
 }
 
 body {
-  background-image: url(../images/sun-pattern.png);
+  background-image: url(../images/pro-sub.jpg);
   color: black;
 }
 
@@ -74,3 +76,17 @@ body {
     transform: scale(1, 1) translateY(0);
   }
 }
+
+
+.languageBtn {
+  background-color: #EDE576;
+  color: black;
+}
+.languageBtn:hover{
+  background-color: #EDE576;
+  color: black;
+}
+/* .languageBtn:active{
+  background-color: #EDE576;
+  color: black;
+} */
