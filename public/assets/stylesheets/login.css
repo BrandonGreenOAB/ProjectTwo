@@ -1,6 +1,29 @@
-.brand-logo {
-  margin-left: 20px;
+
+
+body {
+  height: 100%;
+  width: 100%;
+  background-image: url("../images/man-prog2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+
 }
+
+nav{
+ 
+  opacity: 0.5;
+ 
+}
+
+.king {
+  background-color: rgba(245, 245, 245, 0.7);
+  margin-top: 50px;
+  padding: 30px;
+  padding-bottom: 10px;
+}
+
+
 #logo {
 	text-align: center;
 	
@@ -17,3 +40,9 @@
     font-size: 18pt;
     text-align: center;
   }
+
+ 
+  .btn:hover {
+    background-color: whitesmoke;
+  }
+

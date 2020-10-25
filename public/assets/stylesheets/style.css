@@ -8,11 +8,17 @@ body {
   position: fixed;
 }
 
+nav{
+  
+  opacity: 0.5;
+ 
+}
+
 .king {
   background-color: rgba(245, 245, 245, 0.7);
-  margin-top: 125px;
+  margin-top: 50px;
   padding: 30px;
-  padding-bottom: 80px;
+  padding-bottom: 30px;
 }
 
 .queen {
