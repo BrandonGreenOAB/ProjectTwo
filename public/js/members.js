@@ -28,8 +28,12 @@ $(document).ready(() => {
         var pTag = $("<p>");
         var pTagTwo = $("<p>");
         var contact = $("<button class='contact'> contact </button>");
+        var finish = $("<button class='finish'> Finish Job </button>").attr(
+          "id",
+          data[i].id
+        );
         var br = $("<br>");
-        var del = $("<button class='del '> Finish Job </button>").attr(
+        var del = $("<button class='del '> Delete Job </button>").attr(
           "id",
           data[i].id
         );
@@ -44,6 +48,8 @@ $(document).ready(() => {
         divC.append(contact);
         divC.append(br);
         divC.append(del);
+        divC.append(br);
+        divC.append(finish);
         pTag.text(price);
         pTagTwo.text(language);
         $("#results").append(div);
@@ -63,6 +69,21 @@ $(document).ready(() => {
           if (err) throw err;
           window.location.reload();
         });
+      });
+      //update function to finish job
+      $(".finish").on("click", function(event) {
+        event.preventDefault();
+        console.log("finish clicked");
+        var jobid = this.id;
+        console.log(jobid);
+
+        $.ajax({
+          url: "/update/jobs/" + jobid,
+          method: "PATCH",
+        }).then(function (req, res, err) {
+          if (err) throw err;
+          window.location.reload();
+        })
       });
     });
   });

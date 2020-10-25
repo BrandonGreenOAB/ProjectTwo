@@ -27,13 +27,14 @@ h3 {
   width: 300px;
   margin-left: 20px;
 }
+
 .card:hover {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   transition: opacity 0.3s ease-in-out;
 }
 
 body {
-  background-image: url(../images/sun-pattern.png);
+  background-image: url(../images/pro-sub2.jpg);
   color: black;
 }
 
@@ -78,10 +79,10 @@ body {
   }
 }
 
-.languageBtn{
+.languageBtn {
   margin: 7px;
 }
 
-.languageBtn:hover{
-  
+.languageBtn:hover {
+  margin: 1px;
 }
