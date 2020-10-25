@@ -1,5 +1,5 @@
 body {
-  background-image: url(../images/sun-pattern.png);
+  background-image: url(../images/triangle-mosaic.png);
 }
 
 #container {
@@ -18,4 +18,11 @@ h1 {
 .s6 {
   display: flex;
   justify-content: center;
+}
+p {
+  font-size: 18pt;
+}
+nav{
+  background-color: white;
+  opacity: 0.5;
 }

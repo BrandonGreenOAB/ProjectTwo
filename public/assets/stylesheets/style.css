@@ -10,7 +10,7 @@ body {
 
 .king {
   background-color: rgba(245, 245, 245, 0.7);
-  margin-top: 125px;
+  margin-top: 100px;
   padding: 30px;
   padding-bottom: 80px;
 }
@@ -36,8 +36,11 @@ body {
 .spade {
   margin-top: -10px;
 }
-
-
+nav{
+  background-color: white;
+  opacity: 0.3;
+  font-weight: bolder;
+}
 /* from coolors
 A5A58D
 
