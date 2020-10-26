@@ -32,10 +32,12 @@ h3 {
   width: 300px;
   margin-left: 20px;
 }
+
 .card:hover {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   transition: opacity 0.3s ease-in-out;
 }
+
 
 .slider {
   background-image: url(https://fjwp.s3.amazonaws.com/blog/wp-content/uploads/2020/05/02124829/Software-Engineer-1024x512.png);
@@ -86,10 +88,10 @@ h3 {
   }
 }
 
-.languageBtn{
+.languageBtn {
   margin: 7px;
 }
 
-.languageBtn:hover{
-  
+.languageBtn:hover {
+  margin: 1px;
 }
