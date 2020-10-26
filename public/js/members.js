@@ -79,11 +79,11 @@ $(document).ready(() => {
 
         $.ajax({
           url: "/update/jobs/" + jobid,
-          method: "PATCH",
-        }).then(function (req, res, err) {
+          method: "PUT",
+        }).then(function(req, res, err) {
           if (err) throw err;
           window.location.reload();
-        })
+        });
       });
     });
   });

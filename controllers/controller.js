@@ -126,16 +126,11 @@ router.post("/create/jobs", (req, res) => {
 });
 
 //UPDATE
-router.patch("/update/jobs/:id", (req, res) => {
-  const jobinfo = req.body;
+router.put("/update/jobs/:id", (req, res) => {
+  const jobInfo = req.body;
   const id = req.params.id;
-  console.log(jobinfo);
-  db.Jobs.patch({
-    where: {
-      id: id,
-    },
-    jobDone: true,
-  });
+  console.log(jobInfo);
+  db.Jobs.update({ jobDone: true }, { where: { id: id } });
 });
 //DELETE
 router.delete("/delete/jobs/:id", (req, res) => {
