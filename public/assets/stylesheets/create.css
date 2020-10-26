@@ -4,6 +4,7 @@ body {
   background-image: url("../images/man-prog2.jpg");
   background-repeat: repeat;
   color: black;
+  font-family: 'Trispace', sans-serif;
 }
 
 .card {

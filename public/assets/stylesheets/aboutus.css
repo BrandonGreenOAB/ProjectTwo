@@ -5,6 +5,7 @@ main {
 body {
   background: url(../images/pro-sub2.jpg);
   background-size: cover;
+  font-family: 'Trispace', sans-serif;
 }
 nav {
   background-color: transparent;
