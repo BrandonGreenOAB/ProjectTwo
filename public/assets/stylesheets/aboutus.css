@@ -3,7 +3,7 @@ main {
 }
 
 body {
-  background: url(../images/pro-plant.jpg);
+  background: url(../images/pro-sub2.jpg);
   background-size: cover;
 }
 nav {
@@ -41,5 +41,5 @@ nav {
 }
 .card {
   background: url(../images/grey_wash_wall.png);
-  color: white;
+  color:black;
 }
