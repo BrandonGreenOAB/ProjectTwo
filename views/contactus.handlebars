@@ -1,17 +1,17 @@
 {{body}}
-  <nav>
-            <div class="nav-wrapper">
-                <a href="#" class="brand-logo"><img
-                        src="../assets/images/ab724025-6e54-4847-85f0-056f436507da_200x200.png" height="64px"></a>
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
+<nav>
+    <div class="nav-wrapper">
+        <a href="#" class="brand-logo"><img src="../assets/images/ab724025-6e54-4847-85f0-056f436507da_200x200.png"
+                height="64px"></a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
 
-                    <li><a href="/members">Main</a></li>
-                    <li><a href="/create">Create Job</a></li>
-                    <li><a href="/aboutus">About Us</a></li>
-                    <li><a href="/logout">Log Out</a></li>
-                </ul>
-            </div>
-        </nav>
+            <li><a href="/members">Main</a></li>
+            <li><a href="/create">Create Job</a></li>
+            <li><a href="/aboutus">About Us</a></li>
+            <li><a href="/logout">Log Out</a></li>
+        </ul>
+    </div>
+</nav>
 <br>
 <br>
         <div class="container">
@@ -33,81 +33,99 @@
                                 <label for="last_name"></label>
 
 
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="input-field col s6">
-                                <input placeholder="Email" id="first_name" type="text" class="validate">
-                                <label for="first_name"></label>
-                            </div>
-                            <div class="input-field col s6">
-                                <input placeholder="Company Name" id="last_name" type="text" class="validate">
-                                <label for="last_name"></label>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="row">
-                                <div class="input-field col s12">
-                                    <label for="budget"
-                                        style="font-size: large; color:black; font:bolder; margin-top: -40px;">Budget</label>
-                                </div>
-                                <br>
-                                <br>
-                                <div class="input-field col s12">
-                                    <select class="browser-default" id="budget">
-                                        <option value="" selected disabled>Choose your option</option>
-                                        <option value="1">&lt; $4000</option>
-                                        <option value="2">$4000 - $9000</option>
-                                        <option value="3">&gt; $9000</option>
-                                    </select>
-                                    <br>
-                                    <br>
-                                    <!-- Grid column -->
-                                    <div class="col-md-12">
-                                        <div class="md-form">
-                                            <textarea type="text" id="contact-message" class="form-control md-textarea"
-                                                rows="3"></textarea>
-                                            <label for="contact-message"
-                                                style="font-size: large; color:black; font:bolder;">Your message</label>
-                                        </div>
-                                    </div>
-                                    <div class=" text-center text-md-left">
-                                        <a class="btn wowBtn red btn-md waves-effect waves-light">Send</a>
-                                    </div>
-                                    
-                                </div>
-                            </div>
+    <div class="row">
+        <div class="col lg12 lg7 col-sm-offset-2">
 
-                        </div>
-                        <div class="row" id="info">
-                            <div class="col" id="email">
-                                <i class="fa fa-envelope fa-2x mt-4 red-text"></i>
-                                <p class="mb-0" style="color: black; font-weight: bold;">CodingDock@mail.Developers.com</p>
-                            </div>
-
-
-                            <div class="col" id="location">
-                                <i class="fa fa-map-marker fa-2x red-text"></i>
-                                <p style="color: black;  font-weight: bolder;">Orlando, FL 32839, USA</p>
-                            </div>
-                            <div class="col" id="phone">
-                                <i class="fa fa-phone fa-2x mt-4 red-text"></i>
-                                <p style="color:  black;  font-weight: bold;"> (321) 330-9648</p>
-                            </div>
-                            
-                           
-                        </div>
-                    
+            <div class="card king">
+                <!-- <div class="joker"></div> -->
+                <img class="joker" src="../assets/images/ab724025-6e54-4847-85f0-056f436507da_200x200.png" alt="">
+                <div class="card-body">
+                    <h2 class="spade"> Contact Us </h2>
+                    <div class="input-field col s6">
+                        <input style=" color: black; " placeholder="First Name" id="first_name" type="text"
+                            class="validate">
+                        <label for="first_name"></label>
                     </div>
-                    
+                    <div class="input-field col s6">
+                        <input style=" color: black;" placeholder="Last Name" id="last_name" type="text"
+                            class="validate">
+                        <label for="last_name"></label>
+
+
+                    </div>
                 </div>
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input placeholder="Email" id="first_name" type="text" class="validate">
+                        <label for="first_name"></label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input placeholder="Company Name" id="last_name" type="text" class="validate">
+                        <label for="last_name"></label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <label for="budget"
+                                style="font-size: large; color:black; font:bolder; margin-top: -40px;">Budget</label>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="input-field col s12">
+                            <select class="browser-default" id="budget">
+                                <option value="" selected disabled>Choose your option</option>
+                                <option value="1">&lt; $4000</option>
+                                <option value="2">$4000 - $9000</option>
+                                <option value="3">&gt; $9000</option>
+                            </select>
+                            <br>
+                            <br>
+                            <!-- Grid column -->
+                            <div class="col-md-12">
+                                <div class="md-form">
+                                    <textarea type="text" id="contact-message" class="form-control md-textarea"
+                                        rows="3"></textarea>
+                                    <label for="contact-message"
+                                        style="font-size: large; color:black; font:bolder;">Your message</label>
+                                </div>
+                            </div>
+                            <div class=" text-center text-md-left">
+                                <a class="btn wowBtn red btn-md waves-effect waves-light">Send</a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row" id="info">
+                    <div class="col" id="email">
+                        <i class="fa fa-envelope fa-2x mt-4 red-text"></i>
+                        <p class="mb-0" style="color: black; font-weight: bold;">CodingDock@mail.Developers.com</p>
+                    </div>
+
+
+                    <div class="col" id="location">
+                        <i class="fa fa-map-marker fa-2x red-text"></i>
+                        <p style="color: black;  font-weight: bolder;">Orlando, FL 32839, USA</p>
+                    </div>
+                    <div class="col" id="phone">
+                        <i class="fa fa-phone fa-2x mt-4 red-text"></i>
+                        <p style="color:  black;  font-weight: bold;"> (321) 330-9648</p>
+                    </div>
+
+
+                </div>
+
             </div>
-        
-    
-        </form>
+
+        </div>
+    </div>
 
 
-    
+    </form>
+
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="/js/signup.js"></script>
-
