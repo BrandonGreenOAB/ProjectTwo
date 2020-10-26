@@ -1,12 +1,10 @@
 main {
-  background-image: url(https://fjwp.s3.amazonaws.com/blog/wp-content/uploads/2020/05/02124829/Software-Engineer-1024x512.png);
   color: black;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-blend-mode: lighten;
 }
-nav{
- 
+body {
+  background: url(../images/bgnoise_lg.png);
+}
+nav {
   background-color: transparent;
   opacity: 1.5;
   font-weight: bolder;
@@ -33,8 +31,12 @@ h1 {
 p {
   font-size: 18pt;
 }
-nav{
+nav {
   background-color: whitesmoke;
   opacity: 0.3;
   font-weight: bolder;
+}
+.card {
+  background: url(../images/grey_wash_wall.png);
+  color: white;
 }

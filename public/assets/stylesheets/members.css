@@ -5,13 +5,10 @@
   justify-content: space-around;
   margin-top: 35px;
 }
-nav{
- 
+nav {
   background-color: transparent;
   opacity: 1.5;
   font-weight: bolder;
-  
- 
 }
 h3 {
   margin-top: 0px;
@@ -40,14 +37,11 @@ h3 {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   transition: opacity 0.3s ease-in-out;
 }
-
-
+body {
+  background: url(../images/bgnoise_lg.png);
+}
 .slider {
-  background-image: url(https://fjwp.s3.amazonaws.com/blog/wp-content/uploads/2020/05/02124829/Software-Engineer-1024x512.png);
   color: black;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-blend-mode: lighten;
 }
 
 .stage {
@@ -101,9 +95,10 @@ h3 {
 }
 
 .card {
-  background: url(../images/bgnoise_lg.png);
+  background: url(../images/grey_wash_wall.png);
   border-radius: 20px;
   margin-bottom: 10px;
+  color: white;
 }
 
 .finish,
@@ -111,4 +106,9 @@ h3 {
 .contact {
   margin-top: 50%;
   margin-left: 5px;
+  color: black;
+}
+
+.indicators {
+  text-align: center;
 }
