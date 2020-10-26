@@ -16,6 +16,8 @@ nav{
   flex-wrap: wrap;
 }
 h1 {
+  color: white;
+  text-shadow: 2px 2px 5px black;
   text-align: center;
 }
 .row {
