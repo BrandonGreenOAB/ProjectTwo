@@ -1,8 +1,4 @@
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: inherit;
-}
+
 
 body {
   height: 100%;
@@ -11,20 +7,20 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
-  position: fixed;
+
 }
 
 nav{
-  background-color: #EDE576;
+ 
   opacity: 0.5;
  
 }
 
-.card {
+.king {
   background-color: rgba(245, 245, 245, 0.7);
-  margin-top: 125px;
+  margin-top: 50px;
   padding: 30px;
-  padding-bottom: 80px;
+  padding-bottom: 10px;
 }
 
 
@@ -45,10 +41,7 @@ nav{
     text-align: center;
   }
 
-  .btn {
-    background-color: #EDE576;
-    color: black;
-  }
+ 
   .btn:hover {
     background-color: whitesmoke;
   }
