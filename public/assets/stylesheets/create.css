@@ -2,13 +2,14 @@ body {
   height: 100%;
   width: 100%;
   background-image: url("../images/man-prog2.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   color: black;
 }
 
 .card {
-  margin-top: 50px;
+  /* background-color: rgba(245, 245, 245, 0.7); */
+  margin-top: 125px;
+  padding: 30px;
   padding-bottom: 80px;
   box-shadow: 0 0 10px 1px;
   padding-left: 40px;
