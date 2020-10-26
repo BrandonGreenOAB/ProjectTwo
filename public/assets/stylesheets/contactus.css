@@ -5,7 +5,6 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
-  /* position: fixed; */
 }
 
 nav {
@@ -21,24 +20,12 @@ nav {
   padding-right: 40px;
   margin-top: -30px;
 }
-
-/* .joker {
-  background-repeat: no-repeat;
-  margin-bottom: -20px;
-  margin-top: -40px;
-} */
-
-.spade {
-
-}
-
 nav {
   background-color: white;
   /* opacity: 0.3; */
   font-weight: bolder;
   color: black;
 }
-
 .stage {
   justify-content: center;
   margin-top: 10%;
