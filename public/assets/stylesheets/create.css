@@ -1,27 +1,76 @@
 body {
   height: 100%;
   width: 100%;
-  background-image: url("../images/bgnoise_lg.png");
-  background-repeat: repeat;
+  background-image: url("../images/man-prog2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
   color: black;
 }
 
 .card {
-  /* background-color: rgba(245, 245, 245, 0.7); */
-  margin-top: 125px;
-  padding: 30px;
+  margin-top: 50px;
   padding-bottom: 80px;
-  box-shadow: 0 0 10px 2px;
+  box-shadow: 0 0 10px 1px;
   padding-left: 40px;
   padding-right: 40px;
-  margin-right: 150px;
-  opacity: 0.6;
+  padding-top: 10px;
+  text-align: center;
+  background-color: rgba(245, 245, 245, 0.7);
+  margin-left: -80px;
+}
+
+h3 {
+  margin-top: -25px;
+}
+nav {
+  font-weight: bolder;
+  opacity: 0.5;
+  background-color: rgba(245, 245, 245, 0.7);
   text-align: center;
 }
 
-nav {
-  background-color: transparent;
-  opacity: 1.5;
-  font-weight: bolder;
-  color: black;
+.jobSubmit {
+  color: white;
+  border-color: orangered;
+}
+.stage {
+  justify-content: center;
+  margin-top: 20%;
+  height: 100px;
+  display: flex;
+}
+
+#pageLogo {
+  align-self: flex-end;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  transform-origin: top;
+}
+.bounce-7 {
+  animation-name: bounce-7;
+  animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
+}
+
+@keyframes bounce-7 {
+  0% {
+    transform: scale(1, 1) translateY(0);
+  }
+  10% {
+    transform: scale(1.1, 0.9) translateY(0);
+  }
+  30% {
+    transform: scale(0.9, 1.1) translateY(-30px);
+  }
+  50% {
+    transform: scale(1.05, 0.95) translateY(0);
+  }
+  57% {
+    transform: scale(1, 1) translateY(-7px);
+  }
+  64% {
+    transform: scale(1, 1) translateY(0);
+  }
+  100% {
+    transform: scale(1, 1) translateY(0);
+  }
 }

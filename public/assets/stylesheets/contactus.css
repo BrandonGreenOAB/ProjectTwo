@@ -1,13 +1,16 @@
 body {
   height: 100%;
   width: 100%;
-
-  background: url(../images/bgnoise_lg.png);
-  background-repeat: repeat;
+  background-image: url("../images/man-prog2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
   text-align: center;
-  /* position: fixed; */
+}
 
-
+nav {
+  font-weight: bolder;
+  opacity: 0.5;
+  background-color:  rgba(245, 245, 245, 0.7);
 }
 
 .king {
@@ -15,22 +18,59 @@ body {
   box-shadow: 0 0 10px 2px;
   padding-left: 40px;
   padding-right: 40px;
-  /* margin-right: 150px; */
+  margin-top: -30px;
 }
-
-.joker {
-  background-repeat: no-repeat;
-  margin-bottom: -20px;
-  margin-top: -40px;
-}
-
-.spade {
-  margin-top: -10px;
-}
-
 nav {
   background-color: white;
-  opacity: 0.3;
+  /* opacity: 0.3; */
   font-weight: bolder;
   color: black;
 }
+.stage {
+  justify-content: center;
+  margin-top: 10%;
+  height: 100px;
+  display: flex;
+}
+
+#pageLogo {
+  align-self: flex-end;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  transform-origin: top;
+  margin-bottom: -80px;
+}
+.bounce-7 {
+  animation-name: bounce-7;
+  animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
+}
+
+@keyframes bounce-7 {
+  0% {
+    transform: scale(1, 1) translateY(0);
+  }
+  10% {
+    transform: scale(1.1, 0.9) translateY(0);
+  }
+  30% {
+    transform: scale(0.9, 1.1) translateY(-30px);
+  }
+  50% {
+    transform: scale(1.05, 0.95) translateY(0);
+  }
+  57% {
+    transform: scale(1, 1) translateY(-7px);
+  }
+  64% {
+    transform: scale(1, 1) translateY(0);
+  }
+  100% {
+    transform: scale(1, 1) translateY(0);
+  }
+}
+
+
+
+
+
+

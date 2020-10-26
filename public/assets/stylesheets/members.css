@@ -6,11 +6,9 @@
   margin-top: 35px;
 }
 nav {
-
-  background-color: transparent;
-  opacity: 1.5;
   font-weight: bolder;
-
+  opacity: 0.5;
+  background-color: rgba(245, 245, 245, 0.7);
 }
 h3 {
   margin-top: 0px;
@@ -41,7 +39,8 @@ h3 {
 }
 
 body {
-  background: url(../images/bgnoise_lg.png);
+  background: url(../images/pro-sub2.jpg);
+  background-size: cover;
 }
 
 .slider {
@@ -92,6 +91,7 @@ body {
 .languageBtn {
   margin: 7px;
   border-radius: 15px;
+  box-shadow: 0 0 10px 1px black;
 }
 
 .languageBtn:hover {
