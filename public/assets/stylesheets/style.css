@@ -8,10 +8,8 @@ main {
   position: fixed;
 }
 
-nav{
-  
+nav {
   opacity: 0.5;
- 
 }
 
 .king {
@@ -42,23 +40,9 @@ nav{
 .spade {
   margin-top: -10px;
 }
-nav{
+nav {
   background-color: transparent;
   opacity: 1.5;
   font-weight: bolder;
   color: black;
-
-/* from coolors
-A5A58D
-
-B7B7A4
-
-CB997E
-
-FFF1E6
-F0EFEB
-DDBEA9 */
-
-/* from actual pic 
-#e1d6c6
-#d08973 */
+}
