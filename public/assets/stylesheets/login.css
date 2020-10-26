@@ -23,6 +23,7 @@ nav{
   padding: 30px;
   padding-top: -15px;
   padding-bottom: 30px;
+  box-shadow: 0 0 10px 2px;
 }
   .jack{
    color:  orangered;

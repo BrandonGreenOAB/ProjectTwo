@@ -1,43 +1,37 @@
-body{
+body {
   height: 100%;
-width: 100%; 
-background-image: url("../images/man-prog2.jpg");
-background-size: cover;
-background-repeat: no-repeat;
-text-align: center;
-/* position: fixed; */
+  width: 100%;
+  background-image: url("../images/man-prog2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  /* position: fixed; */
 }
 
-nav{
-  
+nav {
   opacity: 0.5;
- 
 }
 
-.king{
+.king {
   background-color: rgba(245, 245, 245, 0.7);
   box-shadow: 0 0 10px 2px;
   padding-left: 40px;
   padding-right: 40px;
 }
 
-
-.joker{
-
+.joker {
   background-repeat: no-repeat;
- margin-bottom: -20px;
- margin-top: -40px;
+  margin-bottom: -20px;
+  margin-top: -40px;
 }
 
-.spade{
+.spade {
   margin-top: -10px;
 }
 
-
-nav{
-background-color: white;
-/* opacity: 0.3; */
-font-weight: bolder;
-color: black;
-
+nav {
+  background-color: white;
+  /* opacity: 0.3; */
+  font-weight: bolder;
+  color: black;
 }

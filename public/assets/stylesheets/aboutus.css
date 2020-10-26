@@ -5,12 +5,11 @@ main {
   background-repeat: no-repeat;
   background-blend-mode: lighten;
 }
-nav{
+nav {
   opacity: 0.5;
   background-color: white;
   font-weight: bolder;
- }
-
+}
 
 #container {
   display: flex;
