@@ -1,15 +1,38 @@
-main {
-  text-align: center;
+body{
+  height: 100%;
+width: 100%; 
+background-image: url("./man-prog2.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+text-align: center;
 }
-#input {
-  width: 65%;
-  display: inline-block;
-  text-align: left;
-  margin-top: 4%;
+
+.king{
+  background-color: rgba(245, 245, 245, 0.7);
+  box-shadow: 0 0 10px 2px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
-button{
-  background-color: rgb(20, 126, 247);
-  color: white;
-  font-size: large;
-  font: bold;
-};
+
+
+.joker{
+  background-repeat: no-repeat;
+ margin-bottom: -20px;
+ margin-top: -40px;
+}
+
+.spade{
+  margin-top: -10px;
+}
+
+
+nav{
+background-color: white;
+opacity: 0.3;
+font-weight: bolder;
+color: black;
+}
+
+
+
+

@@ -42,6 +42,10 @@ nav{
 .spade {
   margin-top: -10px;
 }
+nav{
+  background-color: white;
+  opacity: 0.3;
+  font-weight: bolder;
 
 /* from coolors
 A5A58D
