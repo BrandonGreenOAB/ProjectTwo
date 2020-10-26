@@ -23,6 +23,8 @@ Run: <pre><code>node server.js</pre></code><br>
 ![alt text](public\assets\images\sssignup.png)
 ![alt text](public\assets\images\ssmembers.png)
 ![alt text](public\assets\images\sscontact.png)
+![alt text](public\assets\images\aboutus.png)
+
 
 
 
