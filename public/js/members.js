@@ -29,11 +29,12 @@ $(document).ready(() => {
         var pTagTwo = $("<p>");
         var pTagThree = $("<p>");
         var description = "Description: ";
-        var contact = $("<button class='contact'> contact </button>");
-        var finish = $("<button class='finish'> Finish Job </button>").attr(
-          "id",
-          data[i].id
-        );
+        var contact = `<form method="get" action="/contactus">
+        <button style='color: black;' type="submit">Contact Us</button>
+    </form>`;
+        var finish = $(
+          "<button class='finish'> Finish Job </button>"
+        ).attr("id", data[i].id);
         var del = $("<button class='del '> Delete Job </button>").attr(
           "id",
           data[i].id
