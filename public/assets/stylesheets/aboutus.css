@@ -1,16 +1,15 @@
 main {
-  background-image: url(https://fjwp.s3.amazonaws.com/blog/wp-content/uploads/2020/05/02124829/Software-Engineer-1024x512.png);
+  background-image: url("../images/man-prog2.jpg");
   color: black;
   background-size: cover;
   background-repeat: no-repeat;
   background-blend-mode: lighten;
 }
-nav{
- 
-  background-color: transparent;
-  opacity: 1.5;
+
+nav {
+  opacity: 0.5;
+  background-color: white;
   font-weight: bolder;
-  color: black;
 }
 
 #container {
@@ -18,6 +17,8 @@ nav{
   flex-wrap: wrap;
 }
 h1 {
+  color: white;
+  text-shadow: 2px 2px 5px black;
   text-align: center;
 }
 .row {
@@ -32,9 +33,4 @@ h1 {
 }
 p {
   font-size: 18pt;
-}
-nav{
-  background-color: whitesmoke;
-  opacity: 0.3;
-  font-weight: bolder;
 }
