@@ -1,14 +1,15 @@
 main {
   color: black;
 }
+
 body {
   background: url(../images/bgnoise_lg.png);
 }
 nav {
   background-color: transparent;
   opacity: 1.5;
+
   font-weight: bolder;
-  color: black;
 }
 
 #container {
@@ -16,6 +17,8 @@ nav {
   flex-wrap: wrap;
 }
 h1 {
+  color: white;
+  text-shadow: 2px 2px 5px black;
   text-align: center;
 }
 .row {
@@ -40,3 +43,4 @@ nav {
   background: url(../images/grey_wash_wall.png);
   color: white;
 }
+

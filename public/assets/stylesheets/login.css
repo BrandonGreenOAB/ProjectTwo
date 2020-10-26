@@ -11,28 +11,25 @@ body {
 }
 
 nav{
-  background-color: transparent;
-  opacity: 1.5;
+  background-color: white;
   font-weight: bolder;
+  opacity: 0.5;
 }
 
 .king {
   background-color: rgba(245, 245, 245, 0.7);
   margin-top: 50px;
   padding: 30px;
-  padding-bottom: 10px;
+  padding-top: -15px;
+  padding-bottom: 30px;
+  box-shadow: 0 0 10px 2px;
 }
-
-
-#logo {
-	text-align: center;
-	
+  .jack{
+   color:  orangered;
   }
-  
   h3 {
 	text-align: center;
-
-  
+margin-top: -30px;
   }
   
   #subtext {
@@ -42,7 +39,51 @@ nav{
   }
 
  
-  .btn:hover {
-    background-color: whitesmoke;
+  .btn {
+    background-color: red;
+  
   }
+
+  .stage {
+    justify-content: center;
+    margin-top: 15%;
+    height: 100px;
+    display: flex;
+  }
+  
+  #pageLogo {
+    align-self: flex-end;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transform-origin: top;
+  }
+  .bounce-7 {
+    animation-name: bounce-7;
+    animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
+  }
+  
+  @keyframes bounce-7 {
+    0% {
+      transform: scale(1, 1) translateY(0);
+    }
+    10% {
+      transform: scale(1.1, 0.9) translateY(0);
+    }
+    30% {
+      transform: scale(0.9, 1.1) translateY(-30px);
+    }
+    50% {
+      transform: scale(1.05, 0.95) translateY(0);
+    }
+    57% {
+      transform: scale(1, 1) translateY(-7px);
+    }
+    64% {
+      transform: scale(1, 1) translateY(0);
+    }
+    100% {
+      transform: scale(1, 1) translateY(0);
+    }
+  }
+  
 
