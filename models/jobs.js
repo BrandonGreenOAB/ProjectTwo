@@ -29,5 +29,13 @@ module.exports = function(sequelize, DataTypes) {
     }
   );
 
+  Jobs.associate = function(db) {
+    Jobs.belongsTo(db.User, {
+      foreignKey: {
+        allowNull:false
+      }
+    })
+  }
+
   return Jobs;
 };

@@ -36,10 +36,7 @@ Object.keys(db).forEach(function(modelName) {
     db[modelName].associate(db);
   }
 });
-
-Jobs.belongsTo(User, {
-  foreignKey: "Job_id",
-});
+console.log(Jobs);
 
 db.sequelize = sequelize;
 db.Sequelize = Sequelize;
