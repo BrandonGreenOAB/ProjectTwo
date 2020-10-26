@@ -1,10 +1,8 @@
 {{body}}
-<main class="foto">
-    <div class="slider fullscreen">
-        <nav>
-            <div class="nav-wrapper text-black">
+  <nav>
+            <div class="nav-wrapper">
                 <a href="#" class="brand-logo"><img
-                        src="/assets/images/ab724025-6e54-4847-85f0-056f436507da_200x200.png" height="64px"></a>
+                        src="../assets/images/ab724025-6e54-4847-85f0-056f436507da_200x200.png" height="64px"></a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
 
                     <li><a href="/members">Main</a></li>
@@ -14,127 +12,101 @@
                 </ul>
             </div>
         </nav>
+
         <div class="container">
 
-            <!-- Section heading -->
-            <h1 class="h1-responsive font-weight-bold text-center mb-5" style="color:black; align-text: center">Contact
-                Us <a href="#" class="brand-logo"><img
-                        src="/assets/images/ab724025-6e54-4847-85f0-056f436507da_200x200.png" height="100px"></a></h2>
-                <!-- Section description -->
-                <h5 class="text-center w-responsive mx-auto mb-5" style="color:black;">Trying to create a Large-scale Web Application? Contact us for more information.</h5>
+            <div class="row">
+                <div class="col lg12 lg7 col-sm-offset-2">
 
-                <br>
-                <br>
-                <div class="row">
-
-                    <!-- Grid column -->
-                    <div class="col-md-9 mb-md-0 mb-5">
-
-                        <form>
-
-                            <!-- Grid row -->
-                            <div class="row">
-                                <div class="input-field col m6 s12">
-                                    <input id="first_name" type="text" class="validate">
-                                    <label for="first_name" style="font-size: large; color:black; font:bolder">First
-                                        Name</label>
-                                </div>
-                                <div class="input-field col m6 s12">
-                                    <input id="last_name" type="text" class="validate">
-                                    <label for="last_name" style="font-size: large; color:black; font:bolder">Last
-                                        Name</label>
-                                </div>
+                    <div class="card king">
+                        <!-- <div class="joker"></div> -->
+                        <img class="joker" src="./ab724025-6e54-4847-85f0-056f436507da_200x200.png" alt="">
+                        <div class="card-body">
+                            <h2 class="spade"> Contact Us </h2>
+                            <div class="input-field col s6">
+                                <input style=" color: black; "placeholder="First Name" id="first_name" type="text" class="validate">
+                                <label for="first_name"></label>
                             </div>
+                            <div class="input-field col s6">
+                                <input style=" color: black;" placeholder="Last Name"  id="last_name" type="text" class="validate">
+                                <label for="last_name"></label>
 
-                            <div class="row">
-                                <div class="input-field col m6 s12">
-                                    <i class="mdi-content-mail prefix"></i>
-                                    <input id="email" type="email" class="validate" required>
-                                    <label for="email" style="font-size: large; color:black; font:bolder">Email</label>
-                                </div>
-                                <div class="input-field col m6 s12">
-                                    <i class="mdi-maps-store-mall-directory prefix"></i>
-                                    <input id="company" type="text" class="validate">
-                                    <label for="company" style="font-size: large; color:black; font:bolder">Company
-                                        Name</label>
-                                </div>
+
                             </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <input placeholder="Email" id="first_name" type="text" class="validate">
+                                <label for="first_name"></label>
+                            </div>
+                            <div class="input-field col s6">
+                                <input placeholder="Company Name" id="last_name" type="text" class="validate">
+                                <label for="last_name"></label>
+                            </div>
+                        </div>
+                        <div class="row">
                             <div class="row">
-                                <div class="row">
-                                    <div class="input-field col s12">
-                                        <label for="budget"
-                                            style="font-size: large; color:black; font:bolder">Budget</label>
-                                    </div>
+                                <div class="input-field col s12">
+                                    <label for="budget"
+                                        style="font-size: large; color:black; font:bolder; margin-top: -40px;">Budget</label>
+                                </div>
+                                <br>
+                                <br>
+                                <div class="input-field col s12">
+                                    <select class="browser-default" id="budget">
+                                        <option value="" selected disabled>Choose your option</option>
+                                        <option value="1">&lt; $4000</option>
+                                        <option value="2">$4000 - $9000</option>
+                                        <option value="3">&gt; $9000</option>
+                                    </select>
                                     <br>
                                     <br>
-                                    <div class="input-field col s12">
-                                        <select class="browser-default" id="budget">
-                                            <option value="" selected disabled>Choose your option</option>
-                                            <option value="1">&lt; $4000</option>
-                                            <option value="2">$4000 - $9000</option>
-                                            <option value="3">&gt; $9000</option>
-                                        </select>
-                                        <br>
-                                        <br>
-                                        <!-- Grid column -->
-                                        <div class="col-md-12">
-                                            <div class="md-form">
-                                                <textarea type="text" id="contact-message"
-                                                    class="form-control md-textarea" rows="3"></textarea>
-                                                <label for="contact-message"
-                                                    style="font-size: large; color:black; font:bolder"">Your message</label>
+                                    <!-- Grid column -->
+                                    <div class="col-md-12">
+                                        <div class="md-form">
+                                            <textarea type="text" id="contact-message" class="form-control md-textarea"
+                                                rows="3"></textarea>
+                                            <label for="contact-message"
+                                                style="font-size: large; color:black; font:bolder;">Your message</label>
                                         </div>
                                     </div>
-
+                                    <div class=" text-center text-md-left">
+                                        <a class="btn wowBtn red btn-md waves-effect waves-light">Send</a>
+                                    </div>
+                                    
                                 </div>
-                                <!-- Grid row -->
-
-                                <!-- Grid column -->
+                            </div>
 
                         </div>
-                        
-                    <div class=" text-center text-md-left">
-                                                    <a class="btn btn-purple btn-md waves-effect waves-light">Send</a>
-                                            </div>
-                                            <br>
-                                            <br>
-                                    
+                        <div class="row" id="info">
+                            <div class="col" id="email">
+                                <i class="fa fa-envelope fa-2x mt-4 red-text"></i>
+                                <p class="mb-0" style="color: black; font-weight: bold;">CodingDock@mail.Developers.com</p>
+                            </div>
 
 
-                        </form>
-                   
-               
-
-                <div class="row" id:"info">
-
-                    <div class="col" id="location">
-                        <i class="fa fa-map-marker fa-2x blue-text"></i>
-                        <p style="color: black;">Orlando, Fl 32839, USA</p>
+                            <div class="col" id="location">
+                                <i class="fa fa-map-marker fa-2x red-text"></i>
+                                <p style="color: black;  font-weight: bolder;">Orlando, FL 32839, USA</p>
+                            </div>
+                            <div class="col" id="phone">
+                                <i class="fa fa-phone fa-2x mt-4 red-text"></i>
+                                <p style="color:  black;  font-weight: bold;"> (321) 330-9648</p>
+                            </div>
+                            
+                           
+                        </div>
+                    
                     </div>
-                    <div class="col" id="phone">
-                        <i class="fa fa-phone fa-2x mt-4 blue-text"></i>
-                        <p style="color:black;">+ 01 (321) 330-9648</p>
-                    </div>
-                    <div class="col" style="align-items: center;" id="email">
-                        <i class="fa fa-envelope fa-2x mt-4 blue-text"></i>
-                        <p class="mb-0" style="color: black;">CodingDock@mail.Developers.com</p>
-                    </div>
+                    
                 </div>
+            </div>
+        
+    
+        </form>
 
-        </div>
-         </div>
-          </div>
-        <!-- Grid column -->
 
-        <!-- Grid column -->
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/signup.js"></script>
 
-    </div>
-    <!-- Grid column -->
-
-    </div>
-    <!-- Grid row -->
-
-    </div>
-    </div>
-
-</main>

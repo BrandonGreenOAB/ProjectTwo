@@ -1,3 +1,9 @@
 .container{
-  text-align:auto;
+  text-align: center;
+}
+
+nav{
+  background-color: whitesmoke;
+  opacity: 0.3;
+  font-weight: bolder;
 }

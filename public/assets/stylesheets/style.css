@@ -13,6 +13,7 @@ body {
   margin-top: 100px;
   padding: 30px;
   padding-bottom: 80px;
+  box-shadow: 0 0 10px 2px;
 }
 
 .queen {
@@ -40,6 +41,7 @@ nav{
   background-color: white;
   opacity: 0.3;
   font-weight: bolder;
+
 }
 /* from coolors
 A5A58D

@@ -23,6 +23,7 @@ p {
   font-size: 18pt;
 }
 nav{
-  background-color: white;
-  opacity: 0.5;
+  background-color: whitesmoke;
+  opacity: 0.3;
+  font-weight: bolder;
 }
