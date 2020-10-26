@@ -81,8 +81,22 @@ body {
 
 .languageBtn {
   margin: 7px;
+  border-radius: 15px;
 }
 
 .languageBtn:hover {
   margin: 1px;
+}
+
+.card {
+  background: url(../images/bgnoise_lg.png);
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+.finish,
+.del,
+.contact {
+  margin-top: 50%;
+  margin-left: 5px;
 }

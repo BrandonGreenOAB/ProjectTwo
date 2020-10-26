@@ -27,12 +27,13 @@ $(document).ready(() => {
         var span = $("<span class='card-title'>");
         var pTag = $("<p>");
         var pTagTwo = $("<p>");
+        var pTagThree = $("<p>");
+        var description = "Description: ";
         var contact = $("<button class='contact'> contact </button>");
         var finish = $("<button class='finish'> Finish Job </button>").attr(
           "id",
           data[i].id
         );
-        var br = $("<br>");
         var del = $("<button class='del '> Delete Job </button>").attr(
           "id",
           data[i].id
@@ -45,13 +46,13 @@ $(document).ready(() => {
         span.text(jobName);
         divC.append(pTag);
         divC.append(pTagTwo);
+        divC.append(pTagThree);
         divC.append(contact);
-        divC.append(br);
         divC.append(del);
-        divC.append(br);
         divC.append(finish);
         pTag.text(price);
         pTagTwo.text(language);
+        pTagThree.text(description);
         $("#results").append(div);
       }
       // Destroy function that deletes the specific job from the Jobs table
