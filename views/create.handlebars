@@ -20,10 +20,12 @@
         <div class="col lg12 lg7 col-sm-offset-4">
             <div class="card">
     <div id="newJob">
-        <a href="#" class="brand-logo"><img
-                    src="/assets/images/ab724025-6e54-4847-85f0-056f436507da_200x200.png"></a>
-        <h1 class="h1-responsive font-weight-bold text-center mb-5" style="color:black; align-text: center">Create a new
-            Job </h2>
+      <div class="stage">
+          <img id="pageLogo" class="bounce-7" src="/assets/images/ab724025-6e54-4847-85f0-056f436507da_200x200.png"
+            alt="" srcset="">
+        </div>
+        <h3 class="h1-responsive font-weight-bold text-center mb-5" style="color:black; align-text: center">Create a new
+            Job </h3>
             <form id="input" action="/create/jobs" method="POST">
                 <label for="jobName" style="font-size: large; color:black">Job Name: </label><br>
                 <input type="text" class="input" id="jobName" name="jobName" placeholder="Enter Job"><br>
@@ -31,7 +33,7 @@
                 <input type="text" class="input" id="price" name="price" placeholder="Enter Price"><br><br>
                 <label for="language" style="font-size: large; color:black">Language: </label><br>
                 <input type="text" class="input" id="language" name="language" placeholder="Enter Language"><br>
-                <button type="submit" class="jobSubmit btn-md waves-effect waves-light">Submit</button>
+                <button type="submit" class="jobSubmit btn-md waves-effect red waves-light">Submit</button>
 
             </form>
 
