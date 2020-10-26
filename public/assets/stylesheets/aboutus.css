@@ -1,5 +1,16 @@
-body {
-  background-image: url(../images/sun-pattern.png);
+main {
+  background-image: url(https://fjwp.s3.amazonaws.com/blog/wp-content/uploads/2020/05/02124829/Software-Engineer-1024x512.png);
+  color: black;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: lighten;
+}
+nav{
+ 
+  background-color: transparent;
+  opacity: 1.5;
+  font-weight: bolder;
+  color: black;
 }
 
 #container {
@@ -21,5 +32,9 @@ h1 {
 }
 p {
   font-size: 18pt;
-  
+}
+nav{
+  background-color: whitesmoke;
+  opacity: 0.3;
+  font-weight: bolder;
 }

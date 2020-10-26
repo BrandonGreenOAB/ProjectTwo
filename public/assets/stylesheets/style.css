@@ -1,4 +1,4 @@
-body {
+main {
   height: 100%;
   width: 100%;
   background-image: url("../images/man-prog2.jpg");
@@ -42,6 +42,11 @@ nav{
 .spade {
   margin-top: -10px;
 }
+nav{
+  background-color: transparent;
+  opacity: 1.5;
+  font-weight: bolder;
+  color: black;
 
 /* from coolors
 A5A58D

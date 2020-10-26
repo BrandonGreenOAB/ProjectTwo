@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "root",
-    "password": "root",
+    "password": "rootroot",
     "database": "dock_db",
     "host": "localhost",
     "dialect": "mysql"
