@@ -7,8 +7,10 @@ main {
 }
 nav{
  
-  opacity: 0.8;
- 
+  background-color: transparent;
+  opacity: 1.5;
+  font-weight: bolder;
+  color: black;
 }
 
 #container {
