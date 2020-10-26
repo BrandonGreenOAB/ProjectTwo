@@ -1,14 +1,14 @@
 main {
-  background-image: url("../images/man-prog2.jpg");
   color: black;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-blend-mode: lighten;
 }
 
+body {
+  background: url(../images/bgnoise_lg.png);
+}
 nav {
-  opacity: 0.5;
-  background-color: white;
+  background-color: transparent;
+  opacity: 1.5;
+
   font-weight: bolder;
 }
 
@@ -34,3 +34,13 @@ h1 {
 p {
   font-size: 18pt;
 }
+nav {
+  background-color: whitesmoke;
+  opacity: 0.3;
+  font-weight: bolder;
+}
+.card {
+  background: url(../images/grey_wash_wall.png);
+  color: white;
+}
+

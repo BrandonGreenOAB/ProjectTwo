@@ -1,15 +1,13 @@
 body {
   height: 100%;
   width: 100%;
-  background-image: url("../images/man-prog2.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+
+  background: url(../images/bgnoise_lg.png);
+  background-repeat: repeat;
   text-align: center;
   /* position: fixed; */
-}
 
-nav {
-  opacity: 0.5;
+
 }
 
 .king {
@@ -17,6 +15,7 @@ nav {
   box-shadow: 0 0 10px 2px;
   padding-left: 40px;
   padding-right: 40px;
+  /* margin-right: 150px; */
 }
 
 .joker {
@@ -31,7 +30,7 @@ nav {
 
 nav {
   background-color: white;
-  /* opacity: 0.3; */
+  opacity: 0.3;
   font-weight: bolder;
   color: black;
 }
