@@ -117,3 +117,8 @@ body {
 .indicators {
   text-align: center;
 }
+
+p {
+  font-size: 22px;
+  font-style: bold;
+}
