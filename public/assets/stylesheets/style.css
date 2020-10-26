@@ -6,6 +6,7 @@ main {
   background-repeat: no-repeat;
   text-align: center;
   position: fixed;
+  font-family: 'Trispace', sans-serif;
 }
 nav {
   background-color: white;
