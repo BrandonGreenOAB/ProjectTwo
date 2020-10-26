@@ -1,24 +1,29 @@
 {{body}}
-
 <nav>
-    <div class="nav-wrapper text-black">
-        <a href="#" class="brand-logo"><img src="/assets/images/ab724025-6e54-4847-85f0-056f436507da_200x200.png"
-                height="64px"></a>
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a href="/members">Main</a></li>
-            <li><a href="/aboutus">About Us</a></li>
-            <li><a href="/contactus">Contact Us</a></li>
-            <li><a href="/logout">Log Out</a></li>
-        </ul>
-    </div>
-</nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo"><img src="/assets/images/ab724025-6e54-4847-85f0-056f436507da_200x200.png"
+                    height="64px"></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
 
-</div>
+                <li><a href="/members">Main</a></li>
+                <li><a href="/create">Create Job</a></li>
+                <li><a href="/contactus">Contact Us</a></li>
+                <li><a href="/logout">Log Out</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
 <main>
+    <div class="container">
+    <div class="row">
+        <div class="col lg12 lg7 col-sm-offset-4">
+            <div class="card">
     <div id="newJob">
+        <a href="#" class="brand-logo"><img
+                    src="/assets/images/ab724025-6e54-4847-85f0-056f436507da_200x200.png"></a>
         <h1 class="h1-responsive font-weight-bold text-center mb-5" style="color:black; align-text: center">Create a new
-            Job <a href="#" class="brand-logo"><img
-                    src="/assets/images/ab724025-6e54-4847-85f0-056f436507da_200x200.png" height="100px"></a></h2>
+            Job </h2>
             <form id="input" action="/create/jobs" method="POST">
                 <label for="jobName" style="font-size: large; color:black">Job Name: </label><br>
                 <input type="text" class="input" id="jobName" name="jobName" placeholder="Enter Job"><br>
@@ -31,9 +36,11 @@
             </form>
 
     </div>
+</div>
+</div>
+</div>
+</div>
 </main>
-
-
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

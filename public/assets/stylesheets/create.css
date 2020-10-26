@@ -1,38 +1,27 @@
-body{
+body {
   height: 100%;
-width: 100%; 
-background-image: url("./man-prog2.jpg");
-background-size: cover;
-background-repeat: no-repeat;
-text-align: center;
+  width: 100%;
+  background-image: url("../images/bgnoise_lg.png");
+  background-repeat: repeat;
+  color: black;
 }
 
-.king{
-  background-color: rgba(245, 245, 245, 0.7);
+.card {
+  /* background-color: rgba(245, 245, 245, 0.7); */
+  margin-top: 125px;
+  padding: 30px;
+  padding-bottom: 80px;
   box-shadow: 0 0 10px 2px;
   padding-left: 40px;
   padding-right: 40px;
+  margin-right: 150px;
+  opacity: 0.6;
+  text-align: center;
 }
 
-
-.joker{
-  background-repeat: no-repeat;
- margin-bottom: -20px;
- margin-top: -40px;
+nav {
+  background-color: transparent;
+  opacity: 1.5;
+  font-weight: bolder;
+  color: black;
 }
-
-.spade{
-  margin-top: -10px;
-}
-
-
-nav{
-background-color: transparent;
-opacity: 1.5;
-font-weight: bolder;
-color: black;
-}
-
-
-
-

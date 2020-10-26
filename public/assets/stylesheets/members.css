@@ -6,9 +6,11 @@
   margin-top: 35px;
 }
 nav {
+
   background-color: transparent;
   opacity: 1.5;
   font-weight: bolder;
+
 }
 h3 {
   margin-top: 0px;
@@ -37,9 +39,11 @@ h3 {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   transition: opacity 0.3s ease-in-out;
 }
+
 body {
   background: url(../images/bgnoise_lg.png);
 }
+
 .slider {
   color: black;
 }
