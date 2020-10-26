@@ -9,9 +9,9 @@ body {
 }
 
 nav{
-  
+  background-color: white;
+  font-weight: bolder;
   opacity: 0.5;
- 
 }
 
 .king {
@@ -42,11 +42,7 @@ nav{
 .spade {
   margin-top: -10px;
 }
-nav{
-  background-color: white;
-  /* opacity: 0.3; */
-  font-weight: bolder;
-}
+
 .stage {
   justify-content: center;
   margin-top: 10%;

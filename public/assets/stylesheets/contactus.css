@@ -8,6 +8,12 @@ text-align: center;
 /* position: fixed; */
 }
 
+nav{
+  
+  opacity: 0.5;
+ 
+}
+
 .king{
   background-color: rgba(245, 245, 245, 0.7);
   /* margin-top: 125px; */
@@ -35,7 +41,7 @@ text-align: center;
 
 nav{
 background-color: white;
-opacity: 0.3;
+/* opacity: 0.3; */
 font-weight: bolder;
 color: black;
 
