@@ -1,4 +1,4 @@
-body {
+main {
   height: 100%;
   width: 100%;
   background-image: url("../images/man-prog2.jpg");
@@ -73,17 +73,5 @@ nav {
   }
 }
 
-/* from coolors
-A5A58D
 
-B7B7A4
 
-CB997E
-
-FFF1E6
-F0EFEB
-DDBEA9 */
-
-/* from actual pic 
-#e1d6c6
-#d08973 */
