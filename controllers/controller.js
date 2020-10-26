@@ -132,6 +132,7 @@ router.put("/update/jobs/:id", (req, res) => {
   console.log(jobInfo);
   db.Jobs.update({ jobDone: true }, { where: { id: id } });
 });
+
 //DELETE
 router.delete("/delete/jobs/:id", (req, res) => {
   const jobInfo = req.body;

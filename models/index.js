@@ -6,6 +6,10 @@ var basename = path.basename(module.filename);
 var env = process.env.NODE_ENV || "development";
 var config = require(__dirname + "/../config/config.json")[env];
 var db = {};
+const Jobs = require("./jobs");
+const User = require("./user");
+const Languages = require("./languages");
+const UserProfile = require("./userProfile");
 
 if (config.use_env_variable) {
   var sequelize = new Sequelize(process.env[config.use_env_variable]);
@@ -32,6 +36,12 @@ Object.keys(db).forEach(function(modelName) {
     db[modelName].associate(db);
   }
 });
+
+Jobs.belongsTo(User, {
+  foreignKey: "Job_id",
+});
+
 db.sequelize = sequelize;
 db.Sequelize = Sequelize;
+
 module.exports = db;
