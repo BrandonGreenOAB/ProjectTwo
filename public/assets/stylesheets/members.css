@@ -41,7 +41,7 @@ h3 {
 body {
   background: url(../images/pro-sub2.jpg);
   background-size: cover;
-  font-family: 'Trispace', sans-serif;
+  font-family: "Trispace", sans-serif;
 }
 
 .slider {
@@ -109,7 +109,7 @@ body {
 .finish,
 .del,
 .contact {
-  margin-top: 50%;
+  margin-top: 10%;
   margin-left: 5px;
   color: black;
 }
