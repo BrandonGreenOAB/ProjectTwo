@@ -1,15 +1,15 @@
 {
   "development": {
-    "username": "root",
-    "password": "root",
-    "database": "dock_db",
-    "host": "localhost",
+    "username": "sd1zd55w2uihzv9o",
+    "password": "wg3k0zdahox1ss17",
+    "database": "vsw7avofvnkx8x54",
+    "host": "z8dl7f9kwf2g82re.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "dialect": "mysql"
   },
   "test": {
-    "username": "root",
-    "password": "null",
-    "database": "database_test",
+    "username": "sd1zd55w2uihzv9o",
+    "password": "wg3k0zdahox1ss17",
+    "database": "vsw7avofvnkx8x54",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
