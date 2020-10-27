@@ -20,13 +20,13 @@ An application for freelance Web Coders to search for gigs based on their coding
 
 Run: <pre><code>node server.js</pre></code><br>
 
-![alt text](public\assets\images\sssignup.png)
-![alt text](public\assets\images\ssmembers.png)
-![alt text](public\assets\images\sscontact.png)
-![alt text](public\assets\images\aboutus.png)
+![alt text](\assets\images\sssignup.png)
+![alt text](\assets\images\ssmembers.png)
+![alt text](\assets\images\sscontact.png)
+![alt text](\assets\images\aboutus.png)
 
 
-
+https://projecttwoucf.herokuapp.com/
 
 
 
