@@ -26,7 +26,7 @@ Run: <pre><code>node server.js</pre></code><br>
 ![alt text](\assets\images\aboutus.png)
 
 
-https://projecttwoucf.herokuapp.com/
+
 
 
 
@@ -58,3 +58,5 @@ To run tests use the following command:
 
 <pre><code>npm run test</pre></code><br>
 
+## Deploy APP
+https://projecttwoucf.herokuapp.com/
