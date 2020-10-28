@@ -20,10 +20,9 @@ An application for freelance Web Coders to search for gigs based on their coding
 
 Run: <pre><code>node server.js</pre></code><br>
 
-![alt text](\assets\images\sssignup.png)
-![alt text](\assets\images\ssmembers.png)
-![alt text](\assets\images\sscontact.png)
-![alt text](\assets\images\aboutus.png)
+![alt text](https://github.com/BrandonGreenOAB/ProjectTwo/blob/main/public/assets/images/sssignup.png)
+![alt text](https://github.com/BrandonGreenOAB/ProjectTwo/blob/main/public/assets/images/ssmembers.png)
+![alt text](https://github.com/BrandonGreenOAB/ProjectTwo/blob/main/public/assets/images/ssabout.png)
 
 
 https://projecttwoucf.herokuapp.com/
